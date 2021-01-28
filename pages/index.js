@@ -8,24 +8,10 @@ import Widget from '../src/components/Widget';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Footer from '../src/components/Footer';
 import Logo from '../src/components/QuizLogo';
-
-const BackgroundImage = styled.div`
-  background-image: url(${db.bg});
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-`;
-
-const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto; 
-    padding: 15px;
-  }
-`;
+import QuizInput from '../src/components/Input'
+import Button from '../src/components/Button'
+import QuizBackground from '../src/components/BackgroundImage';
+import QuizContainer from '../src/components/QuizContainer';
 
 export default function Home() {
   const router = useRouter();
@@ -33,27 +19,26 @@ export default function Home() {
 
 
   return (
-    <BackgroundImage>
+    <QuizBackground>
       <QuizContainer>
         <Logo />
         <Widget>
           <Widget.Header>
-            <h1>The legend of Zelda</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={function (evt) {
-              const name = 'Jao';
               evt.preventDefault();
               router.push(`/quiz?name=${name}`);
             }}>
-              <input placeholder="Diz ai seu nome pra jogar ;)"
-                onChange={function (evt) {
-                  setName(evt.target.value);
-                }}
+              <QuizInput placeholder="Diz ai seu nome pra jogar ;)"
+                name="nomeDoUsuario"
+                onChange={evt => setName(evt.target.value)}
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar como {name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar: ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
@@ -69,6 +54,6 @@ export default function Home() {
         <Footer />
       </QuizContainer>
       <GitHubCorner />
-    </BackgroundImage>
+    </QuizBackground>
   );
 }
