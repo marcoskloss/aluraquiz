@@ -1,5 +1,5 @@
 # AluraQuiz: Versão Doom
-[Jogue agora!](https://aluraquiz-marcoskloss.vercel.app/)
+[Jogue agora!](https://aluraquiz-marcoskloss.vercel.app/) <br>
 O projeto Aluraquiz foi produzido durante a Imersão React NextJS da Alura, nele foi usado React para o layout e estados da aplicação, NextJS para o SSR e deploy na Vercel e também a biblioteca framer motion para algumas animações.
 
 ## Preview
