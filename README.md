@@ -1,78 +1,13 @@
-# Example app with styled-components
+# AluraQuiz: Versão Doom
+[Jogue agora!](https://aluraquiz-marcoskloss.vercel.app/)
+O projeto Aluraquiz foi produzido durante a Imersão React NextJS da Alura, nele foi usado React para o layout e estados da aplicação, NextJS para o SSR e deploy na Vercel e também a biblioteca framer motion para algumas animações.
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+## Preview
+![](https://lh3.googleusercontent.com/AwbNZg1c31ArB_0yV80xuQ7jgVd_vbonYpvS1J8kUok9w4XtocE5uxkxj9U4cr5k4eoTwc0nvFrRBUOyFGrXZl-IOlxFBm8sQQ4wiEUAC3KytEcR5Iz4MOKm-8gFpnI9i_dSmTlX6iqJ3bq_ZMSC8OELC4RtEkFbBlAIjhAfH1wfjze6EYj1mcV5GSsr4d_9IcbRbgxYKsHdo_-xENA-2zAZMw7j--w4Umzoz6wCCXKVWYRDY2xb4cfqWIXCJWk3pLdgUr5KB8nAV4FyBuFCWKJutj8ouvRDOD1sHAFl6CTovfgG9wtr_D3QUtosJkl5slMnTsL4Zli970ugjJjWPiXVAby9hatwLTcOGce5P9LybRrXgCcGVig1RVMZumLLBNQc1nJpL4_ecDFUZy1cghAQtgnY59Sn8wvfwrfKcEUIXx9t1QxU-77yviZCemd2nxOnS7jE5eTo4wKbmJcA9X61du_8pBnZHXbxymLivjdZH_qwRNlpsRRqMTqiohkchM5GUe-T5nvL8hiVsHdzsFMus7o2civZNGRGYf8qxHSBVqE1iI7OqeT-_glCCx-Jb0PsISxfQChQGlk9c6ywnG-CxILr6COy1MpN4F9v7UrSMGMMEkVdcdT0c8wEv_Dv1TRoaaAHRBA9pW6pEKD3Ms-r9tmg_mfBDCUJpAm9Oisp-LLnibMbOmqyhxrz=w1357-h633-no?authuser=0)
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-### Try it on CodeSandbox
-
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
-
-### Notes
-
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
-
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
-
-**components/StyledLink.js**
-
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
-
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
-```
-
-**pages/index.js**
-
-```javascript
-import StyledLink from '../components/StyledLink'
-
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
-
-</details>
+## Tecnologias Utilizadas
+ - ReactJS
+ - NextJs
+ - Styled Components
+ - Vercel
+ - Framer Motion
