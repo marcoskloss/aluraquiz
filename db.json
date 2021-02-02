@@ -55,11 +55,11 @@
       "image": "https://media.giphy.com/media/7ltN7lCgF2MQE/giphy.gif",
       "title": "A empresa desenvolvedora do jogo é a:",
       "description": "Essa tá hard",
-      "answer": 0,
+      "answer": 2,
       "alternatives": [
-         "id Software",
          "Bethesda",
          "Capcom",
+         "id Software",
          "Sega"
       ]
     },
