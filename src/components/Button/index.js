@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import db from '../../../db.json';
 
 const Button = styled.button`
-  margin-top: 15px;
+  margin-top: 5px;
   width: 100%;
   padding: 10px 0;
   border: none;

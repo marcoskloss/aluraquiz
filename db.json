@@ -1,39 +1,103 @@
 {
-  "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "bg": "https://image.api.playstation.com/vulcan/ap/rnd/202009/2814/KpicT7DGtkEUUFioSKyAcIuP.png",
+  "title": "Saga Doom",
+  "description": "Teste agora seus conhecimentos sobre uma das melhores séries de jogos do planeta.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/2/29/Doom_II_-_Hell_on_Earth_Coverart.png",
+      "title": "O primeiro jogo foi lançado em:",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "1992",
+        "1993",
+        "1994",
+        "Nenhuma das anteriores"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/5/57/Doom_cover_art.jpg",
+      "title": "O jogo Doom (1993) foi pioneiro no gênero:",
+      "description": "Essa tá dada de presente",
+      "answer": 2,
+      "alternatives": [
+         "RPG",
+         "Moba",
+         "FPS",
+         "Nenhuma das anteriores"
+      ]
+    },
+    {
+      "image": "https://olhardigital.com.br/wp-content/uploads/2020/09/20200905015545.jpg",
+      "title": "O nome do personagem principal no primeiro jogo da seŕie é:",
+      "description": "Seria esse um pega ratão?",
+      "answer": 3,
+      "alternatives": [
+         "Doom Slayer",
+         "Neil Armstrong",
+         "Doom Razor",
+         "Nenhuma das anteriores"
+      ]
+    },
+    {
+      "image": "https://blog.br.playstation.com/tachyon/sites/4/2020/01/21_doom.jpg?resize=1088,612&crop_strategy=smart",
+      "title": "O jogo mais atual da saga se chama:",
+      "description": "Melhor jogo do referido ano, diga-se de passagem",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Doom Eternal",
+         "Doom 3",
+         "Doom 2",
+         "Final Doom"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/7ltN7lCgF2MQE/giphy.gif",
+      "title": "A empresa desenvolvedora do jogo é a:",
+      "description": "Essa tá hard",
+      "answer": 0,
+      "alternatives": [
+         "id Software",
+         "Bethesda",
+         "Capcom",
+         "Sega"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/CaiVJuZGvR8HK/giphy.gif",
+      "title": "A linguagem de programação usada no primeiro jogo da série foi",
+      "description": "Ué, mas não são a mesma coisa?",
+      "answer": 1,
+      "alternatives": [
+         "C++",
+         "ANSI C",
+         "C99",
+         "GNU C"
+      ]
+    },
+    {
+      "image": "https://warpzone.me/wp-content/uploads/2019/09/DoomDemake.jpg",
+      "title": "O último jogo da série foi lançado em qual ano?",
+      "description": "Finalizando com uma molezinha em",
+      "answer": 3,
+      "alternatives": [
+         "2016",
+         "2018",
+         "2019",
+         "2020"
       ]
     }
   ],
+  
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
   ],
   "theme": {
     "colors": {
-      "primary": "#0d47a1",
-      "secondary": "#29b6f6",
-      "mainBg": "#171B35",
+      "primary": "#85742C",
+      "secondary": "#4E3B35",
+      "mainBg": "#37110B",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
       "success": "#4CAF50"
